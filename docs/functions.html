@@ -9,23 +9,45 @@
 
 <body class = "light-theme">
 
-    <button onclick = "document.getElementById('demo_bulb').src = 'gallery/bulb_on.png'"
-    class = "bulb_button">Turn ON the bulb</button>
+    <div class = "functions-block">
 
-    <img id = "demo_bulb"
-    src = "gallery/bulb_off.png"
-    title = "bulb">
+        <div class = "bulb-on-off-block">
+            <button onclick = "document.getElementById('demo_bulb').src = 'gallery/bulb_on.png'"
+            class = "bulb_button">Turn ON the bulb</button>
 
-    <button onclick = "document.getElementById('demo_bulb').src = 'gallery/bulb_off.png'"
-    class = "bulb_button">Turn OFF the bulb</button>
+            <img id = "demo_bulb"
+            src = "gallery/bulb_off.png"
+            title = "bulb">
 
-    <p id = "demo">fff</p>
+            <button onclick = "document.getElementById('demo_bulb').src = 'gallery/bulb_off.png'"
+            class = "bulb_button">Turn OFF the bulb</button>
+        </div>
 
-    <button onclick = "myfunc()">a</button>
-    <button onclick = "window.print()">Print the page</button>
+        <div class = "print-page-block">
 
-    <p id = "counter">Clicked 0 times</p>
-    <button onclick = "clickCounter()">Click to increase counter</button>
+            <p>Click below to print this page</p>
+            <button onclick = "window.print()">Print the page</button>
+
+        </div>
+
+        <div class = "click_counter_block">
+            <p id = "counter">Clicked 0 times</p>
+            <button onclick = "clickCounter()">Click to increase counter</button>
+        </div>
+
+        <div class = "odd_even_block">
+            <p>Enter number to find if it is Even or Odd:</p>
+
+            <input type = "number"
+            placeholder = "Write your input here..."
+            id = "number_input">
+
+            <button onclick = "checkEvenOdd()">Check</button>
+
+            <p id = "result"></p>
+        </div>
+
+    </div>
 
 </body>
 
