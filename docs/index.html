@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website: Shreya Kumbar</title>
+    <link rel = "stylesheet" href = "style.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" >
+</head>
+
+<body class = "light-theme">
+
+    <div style = "font-size: large;">
+        <ul id = "navbar">
+            <li><a href = "#about_me" class = "flickr">About Me</a></li>
+            <li><a href = "#hobbies" class = "flickr">Hobbies</a></li>
+            <li><a href = "#skills" class = "flickr">Skills</a></li>
+            <li><a href = "#education" class = "flickr">Education</a></li>
+            <li><a href = "functions.html" class = "flickr flickr-js-work">My JavaScript Work</a></li>
+        </ul>
+    </div>
+
+    <div class = "header">
+        <h1 class = "name">Shreya Kumbar</h1>
+
+        <img src = "gallery/photo.png" class = "profile-pic" title = "Profile photo">
+
+        <h2 class = "tagline">
+            B.Tech (IT) <br>
+
+            <u>Specialisation</u>: Information Technology <br>
+
+            <a href = "https://www.iiita.ac.in"
+                target = "_blank"
+                title = "Go to IIITA website">Indian Institute of Information Technology Allahabad</a> <br>
+
+            <a href = "https://www.linkedin.com/in/shreya-kumbar" target = "_blank" title = "Go to my LinkedIn">LinkedIn</a> |
+
+            <a href = "https://github.com/Shreya-Kumbar" target = "_blank"  title = "Go to my GitHub">GitHub</a>
+            <br>
+            
+        </h2>
+    </div>
+    <br>
+
+    <div id = "about_me" class = "sections">
+        <h3>About Me</h3>
+        <p class = "content">Hello everyone, I am Shreya Kumbar. I am passionate about tech related things and I love exploring more.
+           I am currently pursuing <i><b>B.Tech in Information Technology (2nd Semester)</b></i> at <a href = "https://www.iiita.ac.in" target = "_blank" title = "Go to IIITA website">Indian Institute of Information Technology Allahabad</a>.
+           <br>
+           I have learnt html from yt channel <a href = "https://www.youtube.com/watch?v=HGTJBPNC-Gw" target = "_blank">freecodecamp</a>.
+        </p>
+    </div>
+    <br>
+
+    <div id = "hobbies" class = "sections">
+        <h3>Hobbies</h3>
+        <p class = "content">My hobbies include:</p>
+            <ul class = "hobby-list">
+                <li>Solving Puzzles (Sudoku, <a href = "https://www.nytimes.com/games/wordle/index.html">Wordle</a>, etc.)</li>
+                <li>Reading Short Stories</li>
+                <li>Playing Games</li>
+                <li>Listening to Music</li>
+                <li>Watching Movies</li>
+            </ul>
+    </div>
+    <br>
+
+    <div id = "skills" class = "sections dropdown">
+        <h3 class = "dropdown-btn">Skills</h3>
+            <ul class = "dropdown-content">
+                <li>Python</li>
+                <li>C Language</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+                <li>JavaScript</li>
+
+            </ul>
+    </div>
+    <br>
+
+    <div id = "education" class = "sections">
+        <h3>Education</h3>
+        <p class = content>
+            <b>• Schooling:</b> Completed my schooling from KLE's Society School, Belagavi, Karnataka till 6th grade.
+            <br>
+            <b>• Senior Secondary Education:</b> Completed my 11th and 12th class from Allen, Kota, Rajasthan. <br> 10th: 96.40% || 12th: 93.00%
+            <br>
+            <b>• Undergraduate Education:</b> Currently pursuing <i><b>B.Tech in Information Technology</b></i> from <a href = "https://www.iiita.ac.in" target = "_blank" title = "Go to IIITA website">IIITA</a>.
+        </p>
+    </div>
+    <br>
+
+    <div class = "contact-section">
+
+        <div class = "gallery-box">
+            <h3>Gallery</h3>
+            <div class = "gallery">
+                <img src = "gallery/IIITA_Main_Auditorium.jpeg" class = "gallery-img img-1" alt = "Gallery Image 1">
+                <img src = "gallery/IIITA_ClockTower.jpeg" class = "gallery-img img-2" alt = "Gallery Image 2">
+                <img src = "gallery/IIITA_Ganesh_Chaturthi_Celebration.jpeg" class = "gallery-img img-3" alt = "Gallery Image 3">
+                <img src = "gallery/IIITA_AAA_section.jpeg" class = "gallery-img img-4" alt = "Gallery Image 4">
+                <img src = "gallery/IIITA_Library_front.jpeg" class = "gallery-img img-5" alt = "Gallery Image 5">
+            </div>
+        </div>
+
+        <div class = "message-box">
+            <h3>Leave a Message</h3>
+            <form action = "index.php" class = "message-form">
+                <label for = "fname">First Name:</label>
+                <input type = "text" id = "fname" name = "firstname" placeholder = "Enter your First name..." >
+
+                <label for = "lname">Last Name:</label>
+                <input type = "text" id = "lname" name = "lastname" placeholder = "Enter your Last name..." >
+
+                <label for = "message">Message:</label>
+                <textarea rows = "4" placeholder = "Write your message here..."></textarea>
+                
+                <input type = "submit" value = "Submit">
+                <input type = "reset" value = "Reset">
+            </form>
+        </div>
+    </div>
+
+    <div class = "footer">
+        <div class = "contact-info">
+            <div class = "contact-info-left">
+                <a href = "mailto:shreyarkumbar@gmail.com">Email Me</a>
+                <a href = "tel:8089874467">Contact Me</a>
+                <a href = "#about_me" class = "footer_about_me">ABOUT ME</a>
+            </div>
+
+            <div class = "contact-info-right">
+                <a href = "functions.html">My JavaScript Work</a>
+                <a href = "https://www.linkedin.com/in/shreya-kumbar">LinkedIn</a>
+                <a href = "https://github.com/Shreya-Kumbar">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
