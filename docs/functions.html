@@ -35,16 +35,36 @@
             <button onclick = "clickCounter()">Click to increase counter</button>
         </div>
 
-        <div class = "odd_even_block">
+        <div class = "odd-even-block">
             <p>Enter number to find if it is Even or Odd:</p>
 
             <input type = "number"
-            placeholder = "Write your input here..."
-            id = "number_input">
+            placeholder = "Start writing here..."
+            id = "odd-even-block-input">
 
             <button onclick = "checkEvenOdd()">Check</button>
 
-            <p id = "result"></p>
+            <p id = "odd-even-result"></p>
+        </div>
+
+        <div class = "min-max-block">
+            <p>Enter numbers to find Minimum and Maximum:</p>
+
+            <input type = "text"
+            placeholder = "Start writing here..."
+            id = "min-max-block-input">
+
+            <button onclick = "findMinMax()">Find</button>
+
+            <p id = "min-max-result"></p>
+        </div>
+
+        <div class = "calculator-block">
+
+            <input type = "number"
+            placeholder = "Start calculating here"
+            id = "calc-input">
+            
         </div>
 
     </div>

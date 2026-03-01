@@ -1,7 +1,7 @@
 .name {
     font-family:'Times New Roman', Times, serif;
     display: inline-block;
-    background-color:rgb(201, 234, 201);
+    background-color:rgb(225, 255, 235);
     border-style:ridge;
     border-radius: 5px;
     border: 6px ridge rgb(17, 121, 14);
@@ -10,7 +10,7 @@
 
 body.light-theme {
     margin: 20px;
-    background-color:rgb(255, 223, 232);
+    background-color:rgb(252, 205, 218);
 }
 
 body.dark-theme {
@@ -51,13 +51,15 @@ body.dark-theme {
 }
 
 .tagline {
+    background-color: rgb(207, 252, 226);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 2px solid;
-    border-radius: 2px;
+    border-radius: 3.5px;
     padding: 10px;
 }
 
 #navbar {
+    font-size: large;
     display: flex;
     font-weight: bold;
 }
@@ -95,6 +97,10 @@ body.dark-theme {
 
 .sections h3 {
     font-size: large;
+}
+
+.section-heading {
+    padding-left: 10px;
 }
 
 .content {
@@ -155,7 +161,7 @@ textarea {
 }
 
 input[type = "submit"], input[type = "reset"] {
-    background-color: rgb(225, 194, 220);
+    background-color: rgba(253, 168, 203, 0.761);
     font-size: medium;
     font-weight: bold;
     border-radius: 3px;
@@ -171,6 +177,7 @@ input[type = "submit"]:hover, input[type = "reset"]:hover {
 }
 
 .gallery {
+    background-color: rgb(225, 255, 235);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
@@ -212,24 +219,25 @@ input[type = "submit"]:hover, input[type = "reset"]:hover {
 .footer {
     border: 1.5px solid black;
     border-radius: 3px;
-    background-color: rgb(137, 1, 116);
+    background-color: rgb(255, 178, 187);
     margin-top: 20px;
     padding: 5px;
 }
 
 .contact-info {
+    color: purple;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     padding: 5px;
-    gap: 10px;
+    gap: 30px;
     text-align: start;
     display: flex;
 }
 
 .contact-info-left a, .contact-info-right a {
+    color: rgba(0, 82, 44, 0.831);
     display: flex;
-    color: rgb(214, 239, 153);
     text-align: center;
 }
 
@@ -248,8 +256,9 @@ input[type = "submit"]:hover, input[type = "reset"]:hover {
 .functions-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    gap: 15px;
     width: auto;
 }
 
@@ -292,11 +301,18 @@ input[type = "submit"]:hover, input[type = "reset"]:hover {
     .gallery {
         display:flex;
         flex-direction: column;
+        gap: 10px;
+        padding: 15px;
     }
 
     .img-1, .img-2, .img-3, .img-4, .img-5 {
-        width: 100%;
+        width: auto;
         height: auto;
         max-width: 100%;
+    }
+
+    .functions-block {
+        display: flex;
+        flex-direction: column;
     }
 }

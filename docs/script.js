@@ -1,10 +1,5 @@
 window.alert("You are being directed to My JavaScript Functions.");
 
-function myfunc() {
-    document.getElementById('demo').innerHTML = "plllllllllllllllllllllll"
-    console.log(5+7)
-}
-
 let clicked = 0;
 
 function clickCounter() {
@@ -12,19 +7,37 @@ function clickCounter() {
     document.getElementById('counter').innerHTML = "Clicked " + clicked + " times";
 }
 
-function checkEvenOdd(number) {
+function checkEvenOdd() {
 
-    let input = document.getElementById('number_input').value;
-    let n = Number(document.getElementById('number_input').value);
+    let input = document.getElementById('odd-even-block-input').value;
+    let n = Number(input);
+    let display_result = document.getElementById('odd-even-result');
 
     if (input === ""){
-        document.getElementById('result').innerText = "Please enter a number...";
+        display_result.innerText = "Please enter a number...";
         return;
     }
 
     if (n % 2 === 0)
-        document.getElementById('result').innerText = n + " is Even";
+        display_result.innerText = n + " is Even";
     else
-        document.getElementById('result').innerText = n + " is Odd";
+        display_result.innerText = n + " is Odd";
 
+}
+
+function findMinMax() {
+    let input = document.getElementById('min-max-block-input').value;
+    let display_result = document.getElementById('min-max-result');
+
+    if (input === ""){
+        display_result.innerText = "Please enter some input...";
+        return;
+    }
+
+    let minimum = Math.min(...input);
+    let maximum = Math.max(...input);
+    
+    display_result.innerText = "Maximum: " + maximum + " | Minimum: " + minimum;
+
+    return;
 }
